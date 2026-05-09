@@ -11,9 +11,14 @@
 
 <p>
 -Bu projede, VMware ortamında oluşturulan sanal makinelerin Hyper-V platformuna taşınma süreci gerçekleştirilmiştir. Geçiş işlemleri sırasında sanal disk dönüşümü için StarWind V2V Converter aracı kullanılmıştır. VMware altyapısında kullanılan VMDK disk formatı, Hyper-V'nin desteklediği VHDX formatına dönüştürülerek sistemler başarıyla migrate edilmiştir.  
-<br/><br/>
 Converter mantığında temel amaç, farklı hypervisor platformlarının kullandığı sanal disk yapılarını birbirine uyumlu hale getirmektir veya fiziksel diski platformlara uyumlu hale getirmektir. VMware ve Hyper-V farklı sanallaştırma mimarileri kullandığı için disk formatları doğrudan birbirleriyle çalışmaz. Bu projede kullanılan StarWind V2V Converter aracı, kaynak sanal diskin dosya yapısını analiz ederek verileri bozmadan hedef platformun desteklediği disk formatına dönüştürmüştür. Böylece mevcut işletim sistemi, dosyalar, uygulamalar ve yapılandırmalar korunarak sanal makine farklı bir platform üzerinde çalıştırılmıştır. Bu çalışma sayesinde farklı sanallaştırma platformları arasındaki geçiş süreçleri, sanal disk yapıları, hypervisor mimarileri ve disk conversion teknolojileri hakkında pratik deneyim kazanılmıştır.
 </p>
+<br/>
+<br/>
+<p>
+-In this project, the migration process of virtual machines created in a VMware environment to the Hyper-V platform was carried out. During the migration process, the StarWind V2V Converter tool was used for virtual disk conversion. The VMDK disk format used in the VMware infrastructure was successfully converted into the VHDX format supported by Hyper-V.The main purpose of converter technology is to make virtual disk structures used by different hypervisor platforms compatible with each other or to adapt physical disks to virtualization platforms. Since VMware and Hyper-V use different virtualization architectures, their disk formats cannot work directly with one another. In this project, the StarWind V2V Converter tool analyzed the source virtual disk structure and converted it into the disk format supported by the target platform without data corruption. As a result, the existing operating system, files, applications, and configurations were preserved, allowing the virtual machine to run successfully on a different platform.Through this project, practical experience was gained in virtualization platform migration processes, virtual disk structures, hypervisor architectures, and disk conversion technologies.
+</p>
+
 
 <hr/>
 
