@@ -14,15 +14,15 @@ The main purpose of converter technology is to make virtual disk structures used
 <br/>
 <br/>
 
+<h3>VMware virtual machine<h3/>
+
 <img src="screenshots/1-vmware_virtual_machine.png" width="500"/>
 
 
 
 -Bu aşamada, VMware platformundan Hyper-V platformuna taşınacak olan sanal makine görülmektedir. Bu taşıma işleminin amacı, sanal makineyi Hyper-V'nin sunduğu yönetim arayüzleri, sanallaştırma araçları ve altyapı özellikleri üzerinden yönetmek ve işlemleri bu platform üzerinde gerçekleştirmektir.
 
-
-
-- At this stage, the virtual machine that will be migrated from the VMware platform to the Hyper-V platform can be seen. The purpose of this migration is to manage the virtual machine and perform operations through the management interfaces, virtualization tools, and infrastructure features provided by Hyper-V.
+-At this stage, the virtual machine that will be migrated from the VMware platform to the Hyper-V platform can be seen. The purpose of this migration is to manage the virtual machine and perform operations through the management interfaces, virtualization tools, and infrastructure features provided by Hyper-V.
 
 
 
@@ -56,7 +56,7 @@ The main purpose of converter technology is to make virtual disk structures used
 
 
 
-- In this section, the StarWind V2V Converter interface was used to migrate a virtual machine from VMware to Hyper-V. During the process, the source VMDK disk file was selected and the target format was set to Hyper-V compatible VHDX. The tool analyzed the disk structure and performed a lossless conversion of the data, resulting in a virtual disk file compatible with Hyper-V. This process enabled the virtual machine to be transferred to the Hyper-V environment and managed using its administration tools.
+-In this section, the StarWind V2V Converter interface was used to migrate a virtual machine from VMware to Hyper-V. During the process, the source VMDK disk file was selected and the target format was set to Hyper-V compatible VHDX. The tool analyzed the disk structure and performed a lossless conversion of the data, resulting in a virtual disk file compatible with Hyper-V. This process enabled the virtual machine to be transferred to the Hyper-V environment and managed using its administration tools.
 
 
 <br/>
@@ -86,12 +86,11 @@ The main purpose of converter technology is to make virtual disk structures used
 </div>
 
 
-
-> - Birinci görselde, VMware ortamında bulunan sanal disk (VMDK) dosyasının Hyper-V ile uyumlu hale getirilerek VHDX formatına dönüştürüldüğü gösterilmektedir. Bu dönüşüm, sanal diskin Hyper-V ortamında kullanılabilir hale gelmesini sağlar. Dönüştürülen VHDX dosyası, Hyper-V üzerinde yeni bir sanal makine oluşturulurken disk yapılandırma aşamasında sisteme eklenir. Bu sayede daha önce VMware ortamında bulunan sanal makine, oluşturulan yeni Hyper-V sanal makinesine bağlanarak başarıyla aktarılmış olur.
-
+-Birinci görselde, VMware ortamında bulunan sanal disk (VMDK) dosyasının Hyper-V ile uyumlu hale getirilerek VHDX formatına dönüştürüldüğü gösterilmektedir. Bu dönüşüm, sanal diskin Hyper-V ortamında kullanılabilir hale gelmesini sağlar. Dönüştürülen VHDX dosyası, Hyper-V üzerinde yeni bir sanal makine oluşturulurken disk yapılandırma aşamasında sisteme eklenir. Bu sayede daha önce VMware ortamında bulunan sanal makine, oluşturulan yeni Hyper-V sanal makinesine bağlanarak başarıyla aktarılmış olur.
 
 
-> - In the first image, the VMware virtual disk (VMDK) is shown being converted into a Hyper-V compatible format (VHDX). This conversion enables the virtual disk to be used within the Hyper-V environment. The converted VHDX file is then added during the creation of a new virtual machine in Hyper-V, specifically at the disk configuration stage. In this way, the virtual machine previously running in the VMware environment is successfully attached to the newly created Hyper-V virtual machine and migrated.
+
+-In the first image, the VMware virtual disk (VMDK) is shown being converted into a Hyper-V compatible format (VHDX). This conversion enables the virtual disk to be used within the Hyper-V environment. The converted VHDX file is then added during the creation of a new virtual machine in Hyper-V, specifically at the disk configuration stage. In this way, the virtual machine previously running in the VMware environment is successfully attached to the newly created Hyper-V virtual machine and migrated.
 
 
 
