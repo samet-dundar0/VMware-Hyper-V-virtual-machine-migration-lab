@@ -2,15 +2,12 @@
 
 <h1>VMware to Hyper-V Virtual Machine Migration Lab</h1>
 
-<p>
-A practical lab demonstrating virtual machine migration from VMware to Hyper-V using <b>StarWind V2V Converter</b>.
-</p>
 
 </div>
 
 <hr/>
 
-<h2>📌 Project Overview</h2>
+
 
 <p>
 -Bu projede, VMware ortamında oluşturulan sanal makinelerin Hyper-V platformuna taşınma süreci gerçekleştirilmiştir. Geçiş işlemleri sırasında sanal disk dönüşümü için StarWind V2V Converter aracı kullanılmıştır. VMware altyapısında kullanılan VMDK disk formatı, Hyper-V'nin desteklediği VHDX formatına dönüştürülerek sistemler başarıyla migrate edilmiştir.  
@@ -20,7 +17,7 @@ Converter mantığında temel amaç, farklı hypervisor platformlarının kullan
 
 <hr/>
 
-<h2>💻 VMware Virtual Machine</h2>
+<h2>VMware Virtual Machine</h2>
 
 <div align="center">
 <img src="screenshots/1-vmware_virtual_machine.png" width="70%"/>
@@ -36,7 +33,7 @@ Converter mantığında temel amaç, farklı hypervisor platformlarının kullan
 
 <hr/>
 
-<h2>🔄 Converting VMDK → VHDX (StarWind V2V Converter)</h2>
+<h2>Converting VMDK → VHDX (StarWind V2V Converter)</h2>
 
 <div align="center">
 
@@ -65,7 +62,7 @@ Converter mantığında temel amaç, farklı hypervisor platformlarının kullan
 
 <hr/>
 
-<h2>🚀 Transfer to Hyper-V</h2>
+<h2>Transfer to Hyper-V</h2>
 
 <div align="center">
 <img src="screenshots/8-vhdx_created.png" width="30%"/>
