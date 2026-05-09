@@ -1,94 +1,16 @@
-\# 🖥️ VMware Virtualization-Based System and Network Management Lab
-
-
-
-<div align="center">
-
-
-
-!\[VMware](https://img.shields.io/badge/VMware-607078?style=for-the-badge\&logo=vmware\&logoColor=white)
-
-!\[Hyper-V](https://img.shields.io/badge/Hyper--V-0078D4?style=for-the-badge\&logo=microsoft\&logoColor=white)
-
-!\[StarWind](https://img.shields.io/badge/StarWind\_V2V-FF6B35?style=for-the-badge\&logoColor=white)
-
-!\[Migration](https://img.shields.io/badge/VMDK\_→\_VHDX-4CAF50?style=for-the-badge\&logoColor=white)
-
-
-
-</div>
-
-
-
-\---
-
-
-
-\## 📋 Overview
-
 
 
 > \*\*TR:\*\* Bu projede, VMware ortamında oluşturulan sanal makinelerin Hyper-V platformuna taşınma süreci gerçekleştirilmiştir. Geçiş işlemleri sırasında sanal disk dönüşümü için StarWind V2V Converter aracı kullanılmıştır. VMware altyapısında kullanılan VMDK disk formatı, Hyper-V'nin desteklediği VHDX formatına dönüştürülerek sistemler başarıyla migrate edilmiştir.
-
->
-
 > Converter mantığında temel amaç, farklı hypervisor platformlarının kullandığı sanal disk yapılarını birbirine uyumlu hale getirmektir veya fiziksel diski platformlara uyumlu hale getirmektir. VMware ve Hyper-V farklı sanallaştırma mimarileri kullandığı için disk formatları doğrudan birbirleriyle çalışmaz. Bu projede kullanılan StarWind V2V Converter aracı, kaynak sanal diskin dosya yapısını analiz ederek verileri bozmadan hedef platformun desteklediği disk formatına dönüştürmüştür. Böylece mevcut işletim sistemi, dosyalar, uygulamalar ve yapılandırmalar korunarak sanal makine farklı bir platform üzerinde çalıştırılmıştır. Bu çalışma sayesinde farklı sanallaştırma platformları arasındaki geçiş süreçleri, sanal disk yapıları, hypervisor mimarileri ve disk conversion teknolojileri hakkında pratik deneyim kazanılmıştır.
 
 
-
-\---
-
-
-
 > \*\*EN:\*\* In this project, the migration process of virtual machines created in a VMware environment to the Hyper-V platform was carried out. During the migration process, the StarWind V2V Converter tool was used for virtual disk conversion. The VMDK disk format used in the VMware infrastructure was successfully converted into the VHDX format supported by Hyper-V.
-
->
-
 > The main purpose of converter technology is to make virtual disk structures used by different hypervisor platforms compatible with each other or to adapt physical disks to virtualization platforms. Since VMware and Hyper-V use different virtualization architectures, their disk formats cannot work directly with one another. In this project, the StarWind V2V Converter tool analyzed the source virtual disk structure and converted it into the disk format supported by the target platform without data corruption. As a result, the existing operating system, files, applications, and configurations were preserved, allowing the virtual machine to run successfully on a different platform. Through this project, practical experience was gained in virtualization platform migration processes, virtual disk structures, hypervisor architectures, and disk conversion technologies.
 
 
 
-\---
 
-
-
-\## 🔄 Migration Workflow
-
-
-
-```
-
-VMware (VMDK)
-
-&#x20;     │
-
-&#x20;     ▼
-
-StarWind V2V Converter
-
-&#x20;     │
-
-&#x20;     ▼
-
-Hyper-V (VHDX)
-
-```
-
-
-
-\---
-
-
-
-\## 📸 Screenshots
-
-
-
-\### 1️⃣ VMware Virtual Machine
-
-
-
-<img src="screenshots/1-vmware\_virtual\_machine.png" width="500"/>
+<img src="screenshots/1-vmware_virtual_machine.png" width="500"/>
 
 
 
@@ -104,7 +26,7 @@ Hyper-V (VHDX)
 
 
 
-\### 2️⃣ Converting VMDK → VHDX with StarWind V2V Converter
+\### Converting VMDK → VHDX with StarWind V2V Converter
 
 
 
@@ -167,40 +89,4 @@ Hyper-V (VHDX)
 
 
 \---
-
-
-
-\## 🛠️ Tools \& Technologies
-
-
-
-| Tool | Purpose |
-
-|------|---------|
-
-| \*\*VMware Workstation\*\* | Source virtualization platform |
-
-| \*\*Microsoft Hyper-V\*\* | Target virtualization platform |
-
-| \*\*StarWind V2V Converter\*\* | VMDK → VHDX disk conversion |
-
-
-
-\---
-
-
-
-\## 📚 Key Concepts Learned
-
-
-
-\- ✅ Cross-platform virtualization migration
-
-\- ✅ Virtual disk formats (VMDK vs VHDX)
-
-\- ✅ Hypervisor architecture differences
-
-\- ✅ Disk conversion technologies
-
-\- ✅ Lossless data migration techniques
 
